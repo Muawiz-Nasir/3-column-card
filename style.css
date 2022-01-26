@@ -1,0 +1,133 @@
+:root {
+  /* Primary colours*/
+  --brightOrange:hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.container {
+  width: 900px;
+  position: static;
+  top: 15%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.wrapper .sedan {
+  background-color: var(--brightOrange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.wrapper .suvs {
+  background-color: var(--darkCyan);
+}
+
+.wrapper .luxury {
+  background-color: var(--veryDarkCyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.wrapper .text-center {
+  text-align: center;
+}
+
+.wrapper .btn {
+  text-decoration: none;
+  padding: 16px 32px;
+  background: white;
+  border-radius: 20px;
+}
+
+.wrapper .btn:hover {
+  background-color: white;
+}
+
+.wrapper h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+  font-size: 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.wrapper .info-button.btn {
+  color: var(--brightOrange);
+}
+
+.wrapper .info.btn {
+  color: var(--darkCyan);
+}
+
+.wrapper .intro.btn {
+  color: var(--veryDarkCyan);
+}
+
+.wrapper .card {
+  width: 30%;
+  float: left;
+  min-height: 400px;
+  padding: 2rem 3rem;
+}
+
+.wrapper .card p {
+  height: 250px;
+}
+
+/* Mobile version */
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+  .container .sedan {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .container .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .container .card {
+    width: 70%;
+  }
+}
+
+/* iPad version */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+  .container .sedan {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .container .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .container .card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
